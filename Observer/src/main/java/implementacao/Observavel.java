@@ -46,12 +46,21 @@ public class Observavel implements iObservavel {
         novasMedidas();
     }
 
-    public String quebraPalavra() {
+    public String quantidadePalavras() {
         String myString = this.frase;
         StringTokenizer stringTokenizer1 = new StringTokenizer(myString);
         int tokensCount1  = stringTokenizer1.countTokens();
-
         return String.valueOf(tokensCount1);
+    }
+
+    public String[] quebraPalavras() {
+        String myStr = this.frase;
+        String[] palavras = myStr.split(" ");
+
+        for(int j=0; j < palavras.length; j++){
+            System.out.println(palavras[j]);
+        }
+        return palavras;
     }
 
     public String getFrase() {

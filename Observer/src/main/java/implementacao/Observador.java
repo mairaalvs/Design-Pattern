@@ -16,7 +16,8 @@ public class Observador implements iObservador {
     public void update(Observavel aplicativo) {
         System.out.println("Frase: " + aplicativo.getFrase());
         System.out.println("Clientes: "+this.id);
-        System.out.println("Essa frase tem " + aplicativo.quebraPalavra() + " palavras." );
+        System.out.println("Essa frase tem " + aplicativo.quantidadePalavras() + " palavras.\n" );
+        System.out.println("Essa frase tem essas palavras: " + aplicativo.quebraPalavras());
     }
 
 }
