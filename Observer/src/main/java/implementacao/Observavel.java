@@ -2,10 +2,15 @@ package implementacao;
 
 import interfaces.iObservavel;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+//import java.text.*;
+//import java.util.Date;
+import java.util.StringTokenizer;
 
 public class Observavel implements iObservavel {
     private String frase;
+    private String quebraFrase[];
     private List<Observador> clientes;
 
     public Observavel() {
@@ -39,6 +44,14 @@ public class Observavel implements iObservavel {
         System.out.println("\n\n####### Aplicativo anuncia frase nova #######\n\n");
         this.frase = frase;
         novasMedidas();
+    }
+
+    public String quebraPalavra() {
+        String myString = this.frase;
+        StringTokenizer stringTokenizer1 = new StringTokenizer(myString);
+        int tokensCount1  = stringTokenizer1.countTokens();
+
+        return String.valueOf(tokensCount1);
     }
 
     public String getFrase() {
