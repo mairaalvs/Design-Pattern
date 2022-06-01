@@ -7,8 +7,8 @@ public class AplicativoQP {
         // Criando o observavel (subject) aplicativo.
         Observavel aplicativo = new Observavel();
 
-        //Criando 3 observadores e fazendo a inscrição em Netflix.
-        Observador obs1 = new Observador(1);
+        //Criando 3 observadores e fazendo a inscrição no Aplicativo.
+        /*Observador obs1 = new Observador(1);
         Observador obs2 = new Observador(2);
         Observador obs3 = new Observador(3);
 
@@ -21,7 +21,7 @@ public class AplicativoQP {
 
         aplicativo.removeObservador(obs3);
 
-        System.out.println("\n\nMandando notificacao da ultima frases: ");
-        aplicativo.notificaObservadores();
+
+        aplicativo.notificaObservadores(); */
     }
 }

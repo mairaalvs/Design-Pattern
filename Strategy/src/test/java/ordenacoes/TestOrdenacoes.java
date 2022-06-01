@@ -29,7 +29,17 @@ public class TestOrdenacoes {
         int[] aux = {6, 8, 9, 3, 1};
 
 
-        int[] numeros = ordenacoes.ordenaNumeros(aux[]);
+        int[] numeros = ordenacoes.ordenaNumeros(aux);
         assertEquals(numeros[0], 1);
+    }
+
+    @Test
+    public void testeOrdemBubbleValores() {
+        ordenacoes = new ordemBubble();
+        int[] aux = {6, 8, 9, 3, 1};
+
+
+        int[] numeros = ordenacoes.ordenaNumeros(aux);
+        assertEquals(numeros[1], 3);
     }
 }

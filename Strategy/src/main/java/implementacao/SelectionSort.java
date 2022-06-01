@@ -3,7 +3,7 @@ import ordenacao.Ordenacao;
 
 public class SelectionSort implements Ordenacao{
     @Override
-    public int ordenaNumeros(int vetor[]) {
+    public int[] ordenaNumeros(int[] vetor) {
         for (int fixo = 0; fixo < vetor.length - 1; fixo++) {
             int menor = fixo;
 
@@ -18,6 +18,6 @@ public class SelectionSort implements Ordenacao{
                 vetor[menor] = t;
             }
         }
-        return vetor[0];
+        return vetor;
     }
 }

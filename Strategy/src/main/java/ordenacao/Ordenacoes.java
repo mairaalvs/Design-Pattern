@@ -6,7 +6,7 @@ public abstract class Ordenacoes {
     protected Ordenacao ordenacao;
 
     //Comportamento delegado
-    public int ordenaNumeros(int vetor[]) {
+    public int[] ordenaNumeros(int[] vetor) {
         return ordenacao.ordenaNumeros(vetor);
     }
 

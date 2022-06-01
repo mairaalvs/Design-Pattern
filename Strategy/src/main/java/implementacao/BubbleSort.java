@@ -3,7 +3,7 @@ import ordenacao.Ordenacao;
 
 public class BubbleSort implements Ordenacao{
     @Override
-    public int ordenaNumeros(int vetor[]) {
+    public int[] ordenaNumeros(int[] vetor) {
         boolean troca = true;
         int aux;
         while (troca) {
@@ -17,6 +17,6 @@ public class BubbleSort implements Ordenacao{
                 }
             }
         }
-        return vetor[0];
+        return vetor;
     }
 }

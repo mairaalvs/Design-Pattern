@@ -4,7 +4,7 @@ import ordenacao.Ordenacao;
 
 public class InsertionSort implements Ordenacao{
     @Override
-    public int ordenaNumeros(int vetor[]) {
+    public int[] ordenaNumeros(int[] vetor) {
         int j;
         int key;
         int i;
@@ -18,6 +18,6 @@ public class InsertionSort implements Ordenacao{
             }
             vetor[i + 1] = key;
         }
-        return vetor[0];
+        return vetor;
     }
 }
